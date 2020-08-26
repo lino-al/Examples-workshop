@@ -4,6 +4,10 @@
   become: yes
 
   tasks:
+    - name: Ensure grouo "somegroup" exists
+      gruop:
+        name: debadmin
+        state: present
     - name: Ensure three users are present
       user:
         name: "{{ item.username }}"

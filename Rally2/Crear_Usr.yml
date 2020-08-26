@@ -6,7 +6,7 @@
   tasks:
     - name: Ensure grouo "somegroup" exists
       gruop:
-        name: debadmin
+        name: dbadmin
         state: present
     - name: Ensure three users are present
       user:
